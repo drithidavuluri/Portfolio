@@ -590,80 +590,49 @@ section {
   }
 }
 
-/* PUBLICATION CARD */
+/* PUBLICATIONS SECTION */
+
+@media screen and (min-width: 1024px) {
+  #publications {
+    margin-bottom: 1rem;
+  }
+}
+
+#publications {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem 0; /* Add padding only for top and bottom */
+  height: fit-content; /* Ensure the section takes only the required height */
+}
+
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  padding: 0; /* Remove unnecessary padding */
+}
+
 .publication-card {
-  perspective: 1000px; /* Required for 3D flipping */
-  width: 100%; /* Full width of the container */
-  max-width: 700px; /* Set a maximum width */
-  height: auto; /* Allow height to adjust */
-  margin: 0 auto; /* Center the card */
-  position: relative;
-}
-
-/* Front and Back Faces */
-.card-front,
-.card-back {
-  position: absolute;
-  backface-visibility: hidden; /* Hides the reverse side */
-  transition: transform 0.6s ease-in-out;
-  width: 100%; /* Match the container's width */
-  height: 100%; /* Match the container's height */
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
-}
-
-/* Front Face */
-.card-front {
   background: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto; /* Adjust height based on content */
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
-/* Back Face */
-.card-back {
-  background: #fceff1;
-  transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 2rem;
-  text-align: left;
-  height: auto; /* Adjust height dynamically */
-}
-
-/* Matching Dimensions for Back Face */
-.publication-card.flipped .card-front {
-  transform: rotateY(180deg);
-}
-
-.publication-card.flipped .card-back {
-  transform: rotateY(0);
-}
-
-/* Text and Content Styling */
-.card-back p {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-  line-height: 1.5;
-}
-
-.card-back strong {
-  font-weight: bold;
+.publication-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .publication-title {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #333;
+  font-weight: bold;
 }
 
-/* Buttons */
 .publication-btn {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
@@ -677,20 +646,6 @@ section {
 .publication-btn:hover {
   background: #fceff1;
   transform: scale(1.05);
-}
-
-/* Publications Section */
-#publications {
-  text-align: center;
-  margin: 2rem auto;
-  padding: 2rem;
-}
-
-.publications-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
 }
 
 /* CONTACT */

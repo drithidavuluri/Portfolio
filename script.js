@@ -79,9 +79,12 @@ window.addEventListener("resize", () => {
   }
 });
 
+// Dynamically navigate to publication details
 document.querySelectorAll(".publication-btn").forEach((btn) => {
-  btn.addEventListener("click", function () {
-    const card = this.closest(".publication-card");
-    card.classList.toggle("flipped");
+  btn.addEventListener("click", (event) => {
+    const publicationId = event.target.getAttribute("data-publication-id");
+    if (publicationId) {
+      window.location.href = `publication${publicationId}.html`;
+    }
   });
 });

@@ -101,3 +101,39 @@
     text-align: justify;
   }
 }
+
+/* PUBLICATIONS SECTION RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+  .publications-grid {
+    grid-template-columns: 1fr; /* Stack publications vertically */
+    gap: 1rem;
+  }
+
+  .publication-card {
+    width: 90%;
+  }
+
+  .publication-title {
+    font-size: 1rem;
+  }
+
+  .publication-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .publications-grid {
+    gap: 0.5rem; /* Reduce gap for very small screens */
+  }
+
+  .publication-title {
+    font-size: 0.9rem;
+  }
+
+  .publication-btn {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
