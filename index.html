@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img src="./assets/flower.png" alt="Cute Flower" class="top-flower" />
+        Welcome to my portfolio :)
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+      <div class="logo">Welcome to my portfolio :)</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/Profile_Drithi-modified.png"
+          alt="Drithi profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi, I'm</p>
+        <h1 class="title">Drithi Davuluri</h1>
+        <p class="section__text__p1">
+          Continuously learning, exploring new horizons, and building
+          responsible AI for a world where innovation meets integrity.
+        </p>
+      </div>
+      <canvas id="horizontal-network"></canvas>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know Me</p>
+      <h1 class="title">About Me</h1>
+      <div class="about-details-container">
+        <div class="details-container">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>B.Tech in AI and Data Science | IIT Jodhpur (2025 Expected)</p>
+        </div>
+        <div class="text-container">
+          <p>
+            Hello! I'm Drithi, an AI and Data Science enthusiast deeply
+            committed to building responsible AI solutions🤖🌍 that make a
+            positive impact. From designing ethical NLP systems to crafting
+            vision-based AI models, I believe technology should be innovative
+            and inclusive.
+          </p>
+          <p>
+            When I’m not immersed in tech, I’m out on the squash or badminton
+            court🏸, sketching vibrant ideas on a canvas🎨, or lost in the
+            melodies of my favorite tunes🎵. I also dedicate my time to
+            volunteering for causes close to my heart, believing in the power of
+            giving back to the community.✨
+          </p>
+          <p style="font-weight: bold; margin-top: 1rem">
+            Let’s build something incredible together! Explore my journey below
+            and feel free to connect if you'd like to collaborate or share
+            ideas. 🚀
+          </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <p class="section__text__p1">My Journey</p>
+      <h1 class="title">Experience</h1>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-logo">
+            <img src="./assets/iiitb_logo.png" alt="Logo 1" />
+          </div>
+          <div class="timeline-content">
+            <div class="default-content">
+              <h3>
+                International Institute of Information Technology Bangalore
+              </h3>
+              <p>Research Assistant</p>
+              <p>June 2024 - Present</p>
+            </div>
+            <div class="hover-content">
+              <p>
+                Developed a multimodal vision-language framework integrating
+                PointNet++, BERT, and contrastive loss to resolve ambiguities in
+                3D visual grounding using ReferIt-3D, leveraging custom NLP
+                pipelines and enhanced data diversity through point cloud
+                masking.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-logo">
+            <img src="./assets/tum-logo.png" alt="Logo 2" />
+          </div>
+          <div class="timeline-content">
+            <div class="default-content">
+              <h3>Technical University of Munich</h3>
+              <p>Research Intern</p>
+              <p>May 2024 - October 2024</p>
+            </div>
+            <div class="hover-content">
+              <p>
+                Developed and applied GNNs and Vision-inspired Transformers to
+                predict population sizes from beta coalescence-based transition
+                matrices, leveraging Graph Attention Networks and multi-head
+                self-attention for enhanced feature aggregation and analysis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="timeline-logo">
+            <img src="./assets/iitj-logo.png" alt="Logo 3" />
+          </div>
+
+          <div class="timeline-content">
+            <div class="default-content">
+              <h3>Indian Institute of Technology Jodhpur</h3>
+              <p>Research Intern</p>
+              <p>June 2023 - Sept 2023</p>
+            </div>
+            <div class="hover-content">
+              <p>
+                Leveraged HPC, clustering techniques, and ML/DL algorithms to
+                analyze large DNA datasets, uncovering genetic patterns and
+                correlations between cholesterol conditions and heart disease
+                clusters.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-logo">
+            <img src="./assets/cloudastra-logo.png" alt="Logo 4" />
+          </div>
+
+          <div class="timeline-content">
+            <div class="default-content">
+              <h3>CloudAstra</h3>
+              <p>Data Engineer Intern</p>
+              <p>June 2023 - Aug 2023</p>
+            </div>
+            <div class="hover-content">
+              <p>
+                Developed and deployed an automated message processing system
+                for hospital block scheduling using AWS Lambda, SQS, SNS,
+                Python, PostgreSQL, Angular, and Power BI for data visualization
+                and interactive dashboards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="project-grid">
+        <!-- Example Project -->
+        <div class="project-card">
+          <img
+            src="./assets/nlp health.png"
+            alt="Project 1"
+            class="project-img"
+          />
+          <h3 class="project-title">
+            NLP for Bridging Ontologies of Ayurveda with Modern Sciences
+          </h3>
+          <a href="https://github.com/yourusername/project-one" target="_blank">
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/virtual-tour.png"
+            alt="Project 2"
+            class="project-img"
+          />
+          <h3 class="project-title">
+            Campus Virtual Tour: Autonomous Multi Agent System
+          </h3>
+          <a
+            href="https://github.com/drithidavuluri/Campus-Virtual-Tour---Autonomous-Multiagent-System"
+            target="_blank"
+          >
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+
+        <!-- Repeat for other projects -->
+        <div class="project-card">
+          <img
+            src="./assets/image caption.png"
+            alt="Project 3"
+            class="project-img"
+          />
+          <h3 class="project-title">
+            Attention-Based Image Captioning with CLIP Similarity
+          </h3>
+          <a
+            href="https://github.com/drithidavuluri/Attention-Based-Image-Captioning-with-CLIP-Similarity"
+            target="_blank"
+          >
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/federated_learning.png"
+            alt="Project 4"
+            class="project-img"
+          />
+          <h3 class="project-title">
+            Federated Learning with CIFAR-10 dataset
+          </h3>
+          <a
+            href="https://github.com/drithidavuluri/Federated-Learning-with-CIFAR-10"
+            target="_blank"
+          >
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/gender_bias-detection.png"
+            alt="Project 5"
+            class="project-img"
+          />
+          <h3 class="project-title">Gender Bias Detection and Mitigation</h3>
+          <a
+            href="https://github.com/drithidavuluri/Bias-Detection"
+            target="_blank"
+          >
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/video-search-engine.png"
+            alt="Project 6"
+            class="project-img"
+          />
+          <h3 class="project-title">Video Search Engine with Embedding</h3>
+          <a href="https://github.com/PT-10/the_better_youtube" target="_blank">
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+
+        <!-- Repeat for other projects -->
+        <div class="project-card">
+          <img
+            src="./assets/resolution refutation.png"
+            alt="Project 7"
+            class="project-img"
+          />
+          <h3 class="project-title">Resolution-Refutation Implementation</h3>
+          <a
+            href="https://github.com/drithidavuluri/Resolution-Refutation-as-Search"
+            target="_blank"
+          >
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/sentiment analysis.png"
+            alt="Project 8"
+            class="project-img"
+          />
+          <h3 class="project-title">Sentiment Analysis on Product Reviews</h3>
+          <a
+            href="https://github.com/drithidavuluri/Sentiment-Analysis-on-Product-Reviews-POS-Tagging-and-NER"
+            target="_blank"
+          >
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/lime-shap.png"
+            alt="Project 9"
+            class="project-img"
+          />
+          <h3 class="project-title">
+            Interpretability and Visualization in Machine Learning
+          </h3>
+          <a
+            href="https://github.com/drithidavuluri/Interpretability-and-Visualization-in-Machine-Learning"
+            target="_blank"
+          >
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/quantum.png"
+            alt="Project 10"
+            class="project-img"
+          />
+          <h3 class="project-title">
+            Implementation of Quantum Algorithm using Qiskit
+          </h3>
+          <a
+            href="https://github.com/drithidavuluri/Implementation-of-Algorithm-using-Qiskit"
+            target="_blank"
+          >
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/finance.png"
+            alt="Project 11"
+            class="project-img"
+          />
+          <h3 class="project-title">
+            Data-Driven Approaches to Financial Modeling and Market Dynamics
+          </h3>
+          <a
+            href="https://github.com/drithidavuluri/Financial-Engineering-Projects"
+            target="_blank"
+          >
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/healthcare_fraud.png"
+            alt="Project 12"
+            class="project-img"
+          />
+          <h3 class="project-title">Healthcare fraud detection</h3>
+          <a
+            href="https://github.com/drithidavuluri/Healthcare-fraud-detection"
+            target="_blank"
+          >
+            <button class="btn btn-color-2 project-btn">Explore More</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="publications">
+      <p class="section__text__p1">My Research Contributions</p>
+      <h1 class="title">Conference & Publications</h1>
+      <div class="publications-grid">
+        <div class="publication-card">
+          <div class="card-front">
+            <h3 class="publication-title">
+              AdvPred-Core vs FocusPred: The Impact of Attention on Model
+              Performance and Explainability
+            </h3>
+            <button class="btn btn-color-2 publication-btn">
+              More Details
+            </button>
+          </div>
+          <div class="card-back">
+            <p>
+              <strong>Conference:</strong> International Conference on
+              Computational Intelligence in Machine Learning 2024
+            </p>
+            <p>
+              <strong>Publication:</strong> Accepted to be published by Springer
+            </p>
+            <p>
+              <strong>Abstract:</strong> This study explores the comparative
+              performance and explainability of attention-based models in NLP
+              and vision applications, highlighting the advancements in model
+              interpretability and accuracy.
+            </p>
+            <button class="btn btn-color-2 publication-btn flip-back">
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
