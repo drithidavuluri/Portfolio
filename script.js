@@ -88,3 +88,162 @@ document.querySelectorAll(".publication-btn").forEach((btn) => {
     }
   });
 });
+
+// const journeyItems = [
+//   {
+//     title: "Among the Top 1% in JEE",
+//     link: "jee.html",
+//   },
+//   {
+//     title: "AyurTech@IITJ - NLP Researcher",
+//     link: "ayurtech.html",
+//   },
+//   {
+//     title: "Amazon ML Summer School 2024",
+//     link: "amazon_ml.html",
+//   },
+//   {
+//     title: "Top 2.5% in Girl Hackathon 2023 by Google",
+//     link: "girl_hackathon.html",
+//   },
+//   {
+//     title: "Winter School on Graphs & Games",
+//     link: "winter_school.html",
+//   },
+//   {
+//     title: "Think Swiss Scholarship Application",
+//     link: "think_swiss.html",
+//   },
+//   {
+//     title: "Landing My Dream Internship at TUM",
+//     link: "tum_internship.html",
+//   },
+//   {
+//     title: "Top 50 in NXP WIT Program",
+//     link: "nxp_wit.html",
+//   },
+// ];
+
+// const itemsPerPage = 3; // Number of items to show per page
+// let currentPage = 1; // Start with the first page
+
+// // Function to render the items
+// function renderJourneyItems() {
+//   const journeyGrid = document.getElementById("journey-grid");
+//   journeyGrid.innerHTML = ""; // Clear the grid
+//   const startIndex = (currentPage - 1) * itemsPerPage;
+//   const endIndex = Math.min(startIndex + itemsPerPage, journeyItems.length);
+
+//   for (let i = startIndex; i < endIndex; i++) {
+//     const item = journeyItems[i];
+//     const card = document.createElement("div");
+//     card.className = "journey-card";
+//     card.innerHTML = `
+//       <h3>${item.title}</h3>
+//       <a href="${item.link}" class="btn btn-color-2 journey-btn">Read My Story</a>
+//     `;
+//     journeyGrid.appendChild(card);
+//   }
+
+//   // Enable or disable pagination buttons
+//   document.getElementById("prev-btn").disabled = currentPage === 1;
+//   document.getElementById("next-btn").disabled =
+//     endIndex >= journeyItems.length;
+// }
+
+// // Event listeners for pagination buttons
+// document.getElementById("prev-btn").addEventListener("click", () => {
+//   if (currentPage > 1) {
+//     currentPage--;
+//     renderJourneyItems();
+//   }
+// });
+
+// document.getElementById("next-btn").addEventListener("click", () => {
+//   if (currentPage * itemsPerPage < journeyItems.length) {
+//     currentPage++;
+//     renderJourneyItems();
+//   }
+// });
+
+// // Initial render
+// renderJourneyItems();
+const milestones = [
+  {
+    text: "Top 2.5% in Girl Hackathon 2023 by Google",
+    link: "story-girl-hackathon.html",
+  },
+  {
+    text: "Winter School on Graphs & Games by IITJ, Nvidia, and Google",
+    link: "story-winter-school.html",
+  },
+  {
+    text: "Think Swiss Scholarship Application Experience",
+    link: "story-think-swiss.html",
+  },
+  {
+    text: "Ranked Among Top 1% in JEE (1.1 Million Participants)",
+    link: "story-jee.html",
+  },
+  {
+    text: "Selected for Start a Startup Contest Winner at IITJ",
+    link: "story-startup.html",
+  },
+  {
+    text: "Captain, Women Squash Team, IITJ",
+    link: "story-squash.html",
+  },
+];
+
+let currentStartIndex = 0;
+const itemsPerPage = 3;
+
+function renderMilestones() {
+  const journeyList = document.getElementById("journey-list");
+  journeyList.innerHTML = "";
+
+  const visibleMilestones = milestones.slice(
+    currentStartIndex,
+    currentStartIndex + itemsPerPage
+  );
+
+  visibleMilestones.forEach((milestone) => {
+    const item = document.createElement("div");
+    item.classList.add("journey-item");
+
+    const text = document.createElement("p");
+    text.textContent = milestone.text;
+
+    const link = document.createElement("a");
+    link.href = milestone.link;
+    link.textContent = "Read More";
+
+    item.appendChild(text);
+    item.appendChild(link);
+
+    journeyList.appendChild(item);
+  });
+
+  // Update button states
+  document.getElementById("prev-btn").disabled = currentStartIndex === 0;
+  document.getElementById("next-btn").disabled =
+    currentStartIndex + itemsPerPage >= milestones.length;
+}
+
+// Event listeners for pagination
+document.getElementById("prev-btn").addEventListener("click", () => {
+  if (currentStartIndex > 0) {
+    currentStartIndex -= itemsPerPage;
+    renderMilestones();
+  }
+});
+
+document.getElementById("next-btn").addEventListener("click", () => {
+  if (currentStartIndex + itemsPerPage < milestones.length) {
+    currentStartIndex += itemsPerPage;
+    renderMilestones();
+  }
+});
+
+// Initial render
+renderMilestones();

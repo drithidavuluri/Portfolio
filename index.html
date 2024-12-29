@@ -418,26 +418,206 @@
 
     <div class="section-divider"></div>
 
+    <section id="journey">
+      <p class="section__text__p1">Discover My Story</p>
+      <h1 class="title">Milestones That Shaped My Journey</h1>
+      <p class="intro-text">
+        Every milestone represents a step forward, filled with memories, growth,
+        and experiences. Take a look at my journey. ✨
+      </p>
+      <div id="journey-list">
+        <!-- The visible milestones will be dynamically added here -->
+      </div>
+      <div class="pagination-buttons">
+        <button id="prev-btn" class="btn btn-color-2" disabled>Previous</button>
+        <button id="next-btn" class="btn btn-color-2">Next</button>
+      </div>
+    </section>
+
+    <!-- <section id="journey">
+      <p class="section__text__p1">Discover My Story</p>
+      <h1 class="title">Milestones That Shaped My Journey</h1>
+      <p class="intro-text">
+        Every journey is a mosaic of milestones, challenges, and triumphs. Mine
+        is a story of passion, perseverance, and the relentless pursuit of
+        dreams. Click below to explore the chapters of my journey! ✨
+      </p>
+      <div id="journey-grid" class="journey-grid">
+        <div class="journey-card">
+          <h3>AyurTech@IITJ - NLP Researcher</h3>
+          <a href="ayurtech.html" class="btn btn-color-2 journey-btn"
+            >Read My Story</a
+          >
+        </div>
+        <div class="journey-card">
+          <h3>Landing My Dream Internship at TUM</h3>
+          <a href="tum_internship.html" class="btn btn-color-2 journey-btn"
+            >Read My Story</a
+          >
+        </div>
+        <div class="journey-card">
+          <h3>Think Swiss Scholarship Application</h3>
+          <a href="think_swiss.html" class="btn btn-color-2 journey-btn"
+            >Read My Story</a
+          >
+        </div>
+        <div class="journey-card">
+          <h3>Amazon ML Summer School 2024</h3>
+          <a href="amazon_ml.html" class="btn btn-color-2 journey-btn"
+            >Read My Story</a
+          >
+        </div>
+        <div class="journey-card">
+          <h3>Top 2.5% in Girl Hackathon 2023 by Google</h3>
+          <a href="girl_hackathon.html" class="btn btn-color-2 journey-btn"
+            >Read My Story</a
+          >
+        </div>
+        <div class="journey-card">
+          <h3>Top 50 in NXP WIT Program</h3>
+          <a href="nxp_wit.html" class="btn btn-color-2 journey-btn"
+            >Read My Story</a
+          >
+        </div>
+        <div class="journey-card">
+          <h3>Winter School on Graphs & Games</h3>
+          <a href="winter_school.html" class="btn btn-color-2 journey-btn"
+            >Read My Story</a
+          >
+        </div>
+        <div class="journey-card">
+          <h3>The Joint Enterance Examination</h3>
+          <a href="jee.html" class="btn btn-color-2 journey-btn"
+            >Read My Story</a
+          >
+        </div>
+      </div>
+      <div class="pagination-buttons">
+        <button id="prev-btn" class="btn btn-color-2" disabled>Previous</button>
+        <button id="next-btn" class="btn btn-color-2">Next</button>
+      </div>
+    </section> -->
+
+    <div class="section-divider"></div>
+
+    <section id="fun-deck">
+      <p class="section__text__p1">Flipping Through My Passions</p>
+      <h1 class="title">The Fun Deck</h1>
+      <p class="intro-text">
+        Here’s a little deck that reveals my life beyond academics! Flip the
+        cards to discover my love for sports, my entrepreneurial adventures,
+        hobbies that spark joy, and volunteering efforts close to my heart. 🎴✨
+      </p>
+      <div class="deck-container">
+        <!-- Sports Category -->
+        <div class="card" onclick="this.classList.toggle('flipped')">
+          <div class="card-front">
+            <h3>🏸 Sports</h3>
+            <p>Squash, Badminton, and More!</p>
+          </div>
+          <div class="card-back">
+            <p>
+              <strong>Captain:</strong> Women Squash Team, IITJ<br />
+              <strong>Inter-IIT:</strong> Semifinalist & Quarterfinalist<br />
+              <strong>Kridansh:</strong> Winner (Squash & Badminton)<br />
+              Played squash since childhood, winning various platforms.
+            </p>
+          </div>
+        </div>
+
+        <!-- Entrepreneurship Category -->
+        <div class="card" onclick="this.classList.toggle('flipped')">
+          <div class="card-front">
+            <h3>💡 Entrepreneurship</h3>
+            <p>Innovation and Leadership</p>
+          </div>
+          <div class="card-back">
+            <p>
+              <strong>IIC Head:</strong> Led innovation projects (2022-2023)<br />
+              <strong>Startup Winner:</strong> Won “Start a Startup” contest<br />
+              Empowering ideas into impactful actions!
+            </p>
+          </div>
+        </div>
+
+        <!-- Hobbies Category -->
+        <div class="card" onclick="this.classList.toggle('flipped')">
+          <div class="card-front">
+            <h3>🎨 Hobbies</h3>
+            <p>My Creative Escapes</p>
+          </div>
+          <div class="card-back">
+            <p>
+              <strong>Painting:</strong> Bringing vibrant ideas to life<br />
+              <strong>Music:</strong> My constant companion<br />
+              <strong>Travel:</strong> Exploring new horizons and stories.
+            </p>
+          </div>
+        </div>
+
+        <!-- Volunteering Category -->
+        <div class="card" onclick="this.classList.toggle('flipped')">
+          <div class="card-front">
+            <h3>💖 Volunteering</h3>
+            <p>Giving Back to the Community</p>
+          </div>
+          <div class="card-back">
+            <p>
+              <strong>Hriday Foundation:</strong> Hygiene education volunteer<br />
+              <strong>NTR University:</strong> Spreading awareness since 2022<br />
+              Supporting causes that make a difference!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
     <!-- Contact Section -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
+      <p class="section__text__p1">If you want to connect</p>
+      <h1 class="title">Get in Touch</h1>
+      <p class="intro-text">
+        If you’d like to reach out, feel free to get in touch. I’m always happy
+        to connect and chat! 💌
+      </p>
+      <div class="contact-container">
+        <div class="contact-card">
           <img
             src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
+            alt="Email Icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p>
+            <a href="mailto:drithidavuluri@gmail.com"
+              >drithidavuluri@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-card">
+          <img
+            src="./assets/github.png"
+            alt="GitHub Icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://github.com/drithidavuluri" target="_blank"
+              >GitHub</a
+            >
+          </p>
+        </div>
+        <div class="contact-card">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://linkedin.com/in/drithidavuluri" target="_blank"
+              >LinkedIn</a
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -454,7 +634,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2025 Drithi Davuluri. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
