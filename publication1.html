@@ -4,27 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Publication Details</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="publication.css" />
   </head>
   <body>
     <header>
-      <h1>AdvPred-Core vs FocusPred</h1>
+      <div class="header-card">
+        <h1>AdvPred-Core vs FocusPred</h1>
+        <p class="subtitle">
+          Comparative Analysis of Attention-based Models in NLP and Vision
+        </p>
+      </div>
     </header>
     <main>
-      <h2>Conference</h2>
-      <p>
-        International Conference on Computational Intelligence in Machine
-        Learning 2024
-      </p>
-      <h2>Publication</h2>
-      <p>Accepted to be published by Springer</p>
-      <h2>Abstract</h2>
-      <p>
-        This study explores the comparative performance and explainability of
-        attention-based models in NLP and vision applications, highlighting the
-        advancements in model interpretability and accuracy.
-      </p>
-      <a href="index.html" class="btn btn-color-2">Back to Portfolio</a>
+      <section class="details">
+        <div class="detail-item">
+          <img src="assets/conference.png" alt="Conference Icon" />
+          <h2>Conference</h2>
+          <p>
+            International Conference on Computational Intelligence in Machine
+            Learning 2024
+          </p>
+        </div>
+        <div class="detail-item">
+          <img src="assets/article.png" alt="Publication Icon" />
+          <h2>Publication</h2>
+          <p>Accepted to be published by Springer</p>
+        </div>
+        <div class="detail-item">
+          <img src="assets/abstract.png" alt="Abstract Icon" />
+          <h2>Abstract</h2>
+          <p>
+            In the era of expanding customer-centric services, accurate
+            prediction of customer satisfaction is critical for businesses. This
+            study explores the application of advanced machine learning and
+            neural network models for predicting customer satisfaction in the
+            airline industry using the Airline Passenger Satisfaction dataset.
+            We compare traditional models such as Random Forest and XGBoost with
+            more complex architectures, including Deep Neural Networks (DNN) and
+            innovative models like Quantum-Inspired Neural Networks (QINN)
+            (which incorporate entanglement and superposition principles), both
+            with and without attention mechanisms. Our results show that
+            integrating attention layers into the models enhances their
+            performance. Additionally, a stacked ensemble model combining
+            XGBoost, Random Forest, DNN with attention, and QINN with attention
+            achieved commendable results. To ensure interpretability and
+            transparency, we employed a range of Explainable AI (XAI)
+            techniques, including but not limited to LIME, Permutation
+            Importance, Accumulated Local Effects (ALE), and Integrated
+            Gradients. These methods enabled us to examine the models’
+            decision-making processes and assess the influence of attention on
+            feature importance. Overall, our work revealed that the attention
+            mechanism not only improved accuracy but also highlighted key
+            features more effectively, providing deeper insights into the
+            factors driving customer satisfaction. The combination of
+            high-performing models and explainability tools offers a robust
+            solution for both accurate predictions and transparent
+            decision-making in customer satisfaction analysis.
+          </p>
+        </div>
+      </section>
+      <div class="btn-container">
+        <a href="index.html#publications" class="btn">Back to Portfolio</a>
+      </div>
     </main>
   </body>
 </html>
