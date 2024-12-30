@@ -1050,3 +1050,13 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Default heading style */
+.title {
+  font-size: 2rem; /* Default size */
+  margin-top: 20px;
+}
+
+.section__text__p1 {
+  font-size: 1.3rem;
+}

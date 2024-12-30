@@ -180,43 +180,43 @@ document.querySelectorAll(".publication-btn").forEach((btn) => {
 const milestones = [
   {
     text: "AyurTech@IITJ - NLP Researcher",
-    link: "ayurtech.html",
+    link: "nlp.html",
   },
   {
     text: "Landing My Dream Internship at TUM",
-    link: "tum_internship.html",
+    link: "nlp.html",
   },
   {
     text: "Think Swiss Scholarship Application",
-    link: "think_swiss.html",
+    link: "nlp.html",
   },
   {
     text: "Top 50 in NXP WIT Program",
-    link: "nxp_wit.html",
+    link: "nlp.html",
   },
   {
     text: "Top 2.5% in Girl Hackathon 2023 by Google",
-    link: "story-girl-hackathon.html",
+    link: "nlp.html",
   },
   {
     text: "Amazon ML Summer School 2024",
-    link: "amazon_ml.html",
+    link: "nlp.html",
   },
   {
     text: "Teaching Assistant - Principles of Computer Systems - I",
-    link: "pcs1.html",
+    link: "nlp.html",
   },
   {
     text: "Winter School on Graphs & Games by IITJ, Nvidia, and Google",
-    link: "story-winter-school.html",
+    link: "nlp.html",
   },
   {
     text: "Captain, Women Squash Team, IITJ",
-    link: "story-squash.html",
+    link: "nlp.html",
   },
   {
     text: "Ranked Among Top 1% in JEE (1.1 Million Participants)",
-    link: "story-jee.html",
+    link: "nlp.html",
   },
 ];
 
