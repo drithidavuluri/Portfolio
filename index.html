@@ -20,6 +20,14 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)">More</a>
+            <ul class="dropdown-content">
+              <li><a href="#publications">Conference & Publications</a></li>
+              <li><a href="#journey">Milestones</a></li>
+              <li><a href="#fun-deck">Fun Deck</a></li>
+            </ul>
+          </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -38,6 +46,18 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" onclick="toggleDropdown()">More</a>
+            <ul class="dropdown-content">
+              <li>
+                <a href="#publications" onclick="toggleMenu()"
+                  >Conference & Publications</a
+                >
+              </li>
+              <li><a href="#journey" onclick="toggleMenu()">Milestones</a></li>
+              <li><a href="#fun-deck" onclick="toggleMenu()">Fun Deck</a></li>
+            </ul>
+          </li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -94,12 +114,12 @@
           </p>
         </div>
       </div>
-      <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
-      />
+      /> -->
     </section>
     <div class="section-divider"></div>
 

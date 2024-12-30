@@ -102,6 +102,56 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  /* Reduce size of the hamburger icon for medium screens */
+  .hamburger-icon {
+    width: 20px; /* Smaller width */
+    height: 16px; /* Smaller height */
+  }
+
+  .hamburger-icon span {
+    height: 2px; /* Maintain thin lines */
+    width: 100%; /* Adjust width proportionally */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further reduce size for smaller screens */
+  .hamburger-icon {
+    width: 16px; /* Compact width */
+    height: 12px; /* Compact height */
+  }
+
+  .hamburger-icon span {
+    height: 1.5px; /* Thinner lines for smaller screens */
+    width: 100%; /* Maintain proportional width */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Reduce size of hamburger menu links */
+  .menu-links a {
+    font-size: 16px; /* Adjusted size for medium screens */
+    padding: 8px 0; /* Reduce padding for a more compact menu */
+  }
+
+  .menu-links li {
+    margin: 4px 0; /* Reduce spacing between items */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further reduce size for smaller screens */
+  .menu-links a {
+    font-size: 14px; /* Compact size for small screens */
+    padding: 6px 0; /* Further reduce padding */
+  }
+
+  .menu-links li {
+    margin: 2px 0; /* Compact spacing for smaller screens */
+  }
+}
+
 /* PUBLICATIONS SECTION RESPONSIVENESS */
 @media screen and (max-width: 768px) {
   .publications-grid {
@@ -138,30 +188,271 @@
   }
 }
 
-/* JOURNEY SECTION RESPONSIVENESS */
+/* Base font size adjustments for mobile */
 @media screen and (max-width: 768px) {
-  .journey-grid {
-    grid-template-columns: 1fr; /* Stack the cards vertically */
-    gap: 1rem;
+  /* General body text */
+  body,
+  p,
+  .section__text {
+    font-size: 14px; /* Consistent base size for body text */
+    line-height: 1.5; /* Ensure readability */
   }
 
-  .journey-card {
-    width: 90%;
+  /* Headings (h1, h2, h3, etc.) */
+  h1,
+  .title {
+    font-size: 24px; /* Main title size */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
   }
 
-  .journey-btn {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
+  h2 {
+    font-size: 20px; /* Subheading size */
+    font-weight: semi-bold;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 18px; /* Smaller headings */
+    font-weight: medium;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Section titles */
+  .section__text__p1 {
+    font-size: 16px; /* Section intro text */
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* Button text */
+  .btn {
+    font-size: 14px; /* Button text size */
+  }
+
+  /* Milestone text */
+  .journey-item p,
+  .journey-card h3 {
+    font-size: 16px; /* Milestone text */
+  }
+
+  /* Card titles */
+  .card-front h3,
+  .card-back p {
+    font-size: 16px; /* Consistent size for card text */
+  }
+}
+
+/* Adjustments for very small screens */
+@media screen and (max-width: 480px) {
+  body,
+  p,
+  .section__text {
+    font-size: 12px; /* Smaller size for very small screens */
+    line-height: 1.4;
+  }
+
+  h1,
+  .title {
+    font-size: 20px; /* Reduce main title size */
+  }
+
+  h2 {
+    font-size: 18px; /* Adjust subheading size */
+  }
+
+  h3 {
+    font-size: 16px; /* Smaller heading size */
+  }
+
+  .section__text__p1,
+  .journey-item p,
+  .card-front h3,
+  .card-back p {
+    font-size: 14px; /* Smaller size for descriptive text */
+  }
+
+  .btn {
+    font-size: 12px; /* Compact button text */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Reduce size for medium screens */
+  .logo {
+    font-size: 18px; /* Adjusted size for tablets */
   }
 }
 
 @media screen and (max-width: 480px) {
-  .journey-grid {
-    gap: 0.5rem; /* Reduce gap for smaller screens */
+  /* Further reduce size for smaller screens */
+  .logo {
+    font-size: 16px; /* Adjusted size for mobile phones */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust the milestone intro text size */
+  #journey .intro-text {
+    font-size: 14px; /* Reduced size */
+    line-height: 1.4; /* Adjusted line spacing */
   }
 
-  .journey-btn {
-    font-size: 0.8rem;
-    padding: 0.3rem 0.6rem;
+  /* Adjust the fun-deck intro text size */
+  #fun-deck .intro-text {
+    font-size: 14px; /* Reduced size */
+    line-height: 1.4; /* Adjusted line spacing */
+  }
+
+  /* Adjust the contact intro text size */
+  #contact .intro-text {
+    font-size: 14px; /* Reduced size */
+    line-height: 1.4; /* Adjusted line spacing */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further reduction for very small screens */
+  #journey .intro-text,
+  #fun-deck .intro-text,
+  #contact .intro-text {
+    font-size: 12px; /* Reduced size for very small screens */
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Reduce size of project names */
+  .project-title {
+    font-size: 12px; /* Adjusted size for medium screens */
+    font-weight: 600; /* Optional: Make text slightly bolder for readability */
+    text-align: center; /* Ensure alignment remains consistent */
+    margin-bottom: 0.5rem; /* Adjust spacing */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further reduce size for very small screens */
+  .project-title {
+    font-size: 10px; /* Reduced size for smaller screens */
+    font-weight: 600; /* Retain readability */
+    text-align: center; /* Maintain alignment */
+    margin-bottom: 0.4rem; /* Adjust spacing */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Reduce size of publication titles */
+  .publication-title {
+    font-size: 14px; /* Adjusted size for medium screens */
+    font-weight: 600; /* Slightly bold for emphasis */
+    text-align: center; /* Ensure alignment */
+    margin-bottom: 0.5rem; /* Adjust spacing */
+  }
+
+  /* Reduce size of publication buttons */
+  .publication-btn {
+    font-size: 12px; /* Adjusted size for medium screens */
+    padding: 0.4rem 0.8rem; /* Reduce padding for smaller buttons */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further reduce size for smaller screens */
+  .publication-title {
+    font-size: 10px; /* Smaller size for compact screens */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.4rem;
+  }
+
+  .publication-btn {
+    font-size: 9px; /* Compact size for small screens */
+    padding: 0.3rem 0.6rem; /* Further reduce padding */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Reduce font size for milestone titles */
+  .journey-item p {
+    font-size: 14px; /* Adjusted size for medium screens */
+    font-weight: 500; /* Optional: Slightly bold for better emphasis */
+    line-height: 1.4; /* Ensure readability */
+  }
+
+  /* Reduce font size for "Read More" buttons */
+  .journey-item a {
+    font-size: 12px; /* Adjusted size for medium screens */
+    padding: 0.4rem 0.8rem; /* Reduce padding for smaller buttons */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further reduce font size for smaller screens */
+  .journey-item p {
+    font-size: 12px; /* Compact size for small screens */
+    line-height: 1.3;
+  }
+
+  .journey-item a {
+    font-size: 10px; /* Compact size for small screens */
+    padding: 0.3rem 0.6rem; /* Further reduce padding */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Reduce size of Next and Previous buttons */
+  .pagination-buttons .btn {
+    font-size: 14px; /* Adjusted size for medium screens */
+    padding: 0.4rem 1rem; /* Reduce padding for a smaller button */
+    border-radius: 0.8rem; /* Keep rounded corners smaller */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further reduce size for smaller screens */
+  .pagination-buttons .btn {
+    font-size: 12px; /* Compact size for small screens */
+    padding: 0.3rem 0.8rem; /* Further reduce padding */
+    border-radius: 0.6rem; /* Adjust corner rounding */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Reduce font size of text on the back of the card for medium screens */
+  .card-back p {
+    font-size: 14px; /* Smaller size for medium screens */
+    line-height: 1.4; /* Adjust line spacing for better readability */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further reduce font size for smaller screens */
+  .card-back p {
+    font-size: 12px; /* Compact size for small screens */
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Reduce height of cards for medium screens */
+  .card {
+    height: 200px; /* Reduced height for medium screens */
+  }
+
+  .card-front,
+  .card-back {
+    height: 200px; /* Ensure both front and back sides match the card height */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further reduce height for smaller screens */
+  .card {
+    height: 200px; /* Compact height for small screens */
+  }
+
+  .card-front,
+  .card-back {
+    height: 200px; /* Ensure both front and back sides match the card height */
   }
 }

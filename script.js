@@ -5,6 +5,15 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+function toggleDropdown() {
+  const dropdownContent = document.querySelector(
+    ".menu-links .dropdown .dropdown-content"
+  );
+  if (dropdownContent) {
+    dropdownContent.classList.toggle("open");
+  }
+}
+
 // Horizontal Neural Network Animation
 const canvas = document.getElementById("horizontal-network");
 const ctx = canvas.getContext("2d");

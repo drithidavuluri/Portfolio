@@ -76,6 +76,46 @@ a:hover {
   cursor: default;
 }
 
+/* Dropdown Menu */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown a {
+  cursor: pointer;
+}
+
+.nav-links .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  border-radius: 4px;
+}
+
+.nav-links .dropdown-content li {
+  padding: 0.5rem 1rem;
+}
+
+.nav-links .dropdown-content li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-links .dropdown-content li a:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -154,6 +194,49 @@ a:hover {
 
 .hamburger-icon span:first-child {
   transform: none;
+}
+
+/* Mobile Menu Dropdown Styling */
+.menu-links .dropdown {
+  position: relative;
+}
+
+.menu-links .dropdown a {
+  cursor: pointer;
+  font-size: 16px; /* Ensure consistent size */
+}
+
+.menu-links .dropdown-content {
+  display: none;
+  background-color: white;
+  position: relative; /* Stays in flow of the menu */
+  padding: 0;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+}
+
+.menu-links .dropdown-content li {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #f0f0f0; /* Add separators */
+}
+
+.menu-links .dropdown-content li:last-child {
+  border-bottom: none; /* Remove bottom border from last item */
+}
+
+.menu-links .dropdown-content li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-links .dropdown-content li a:hover {
+  background-color: #f0f0f0; /* Add hover effect */
+}
+
+/* Show dropdown content when open */
+.menu-links .dropdown .dropdown-content.open {
+  display: block;
 }
 
 /* SECTIONS */
@@ -586,7 +669,7 @@ section {
 
 @media screen and (max-width: 480px) {
   .project-grid {
-    grid-template-columns: 1fr; /* 1 project per row for small screens */
+    grid-template-columns: 2fr; /* 1 project per row for small screens */
   }
 }
 
@@ -628,7 +711,7 @@ section {
 }
 
 .publication-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
